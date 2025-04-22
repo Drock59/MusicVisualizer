@@ -1,0 +1,14 @@
+// Declare and calculate baseRadius first
+const baseRadius = Math.min(canvas.width, canvas.height) / 3;
+
+const avg = Array.from(dataArray).reduce((a, b) => a + b, 0) / bufferLength;
+
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+// Create a polygon base
+const polygonPoints = [];
+for (let i = 0; i < sides; i++) {
+    const amplitude = dataArray[Math.floor(i * (bufferLength/sides))] * sensitivity;
+    const radius = baseRadius * 0.4 + (amplitude / 255 * baseRadius * 0.6);
+    // rest of the code for creating polygon points using 'radius' instead of 'baseRadius'
+}
