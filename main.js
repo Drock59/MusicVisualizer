@@ -3,6 +3,8 @@ import { preloadAssets } from './preload.js';
 import * as visualizerFunctions from './visualizer.js';
 import { defaultAssets } from './preload.js';
 import { initImageGeneration } from './image-gen.js';
+import WebsimSocket from 'websim-socket-library'; // Replace with the actual library name
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("Music Visualizer Test - Successfully Loaded!");
