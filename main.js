@@ -3,7 +3,6 @@ import { preloadAssets } from './preload.js';
 import * as visualizerFunctions from './visualizer.js';
 import { defaultAssets } from './preload.js';
 import { initImageGeneration } from './image-gen.js';
-import WebsimSocket from './websim-socket-library'; // Replace with the actual library name
 import WebsimSocket from 'https://cdn.jsdelivr.net/npm/websim-socket-library@latest';
 
 
